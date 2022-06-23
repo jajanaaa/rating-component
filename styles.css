@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,700;display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --medium-grey-transparent: hsl(216deg 12% 54% / 28%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 390px;
+  height: 390px;
+  border-radius: 20px;
+  background-color: var(--dark-blue);
+  background: radial-gradient(at 50% 0 #e66465, #9198e5);
+  background: -webkit-linear-gradient(hsl(213deg 20% 21%), hsl(216deg 12% 19%));
+  padding: 30px;
+}
+
+.card-inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  height: 330px;
+}
+
+.star-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: var(--medium-grey-transparent);
+  display: flex;
+}
+
+.star-container img {
+  width: 25px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+h1 {
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.container p {
+  color: var(--medium-grey);
+  line-height: 1.5;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: var(--medium-grey-transparent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-grey);
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+#sumbit {
+  background-color: var(--orange);
+  width: 100%;
+  border-radius: 20px;
+  height: 40px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+}
+
+.number:hover {
+  background-color: var(--light-grey);
+  color: white;
+}
+
+/* .number:active {
+  background-color: var(--orange);
+  color: white;
+} */
+
+button:active,
+button:focus {
+  background-color: var(--orange);
+  color: white;
+}
+
+#sumbit:hover {
+  background-color: white;
+  color: var(--orange);
+}
+
+.hide {
+  display: none;
+}
+
+.card-2-inside {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 330px;
+}
+
+.thank-you-ilu {
+  max-width: 50%;
+}
+
+p.selected-p {
+  color: var(--orange);
+  background-color: var(--medium-grey-transparent);
+  border-radius: 50px;
+  padding: 5px 20px;
+}
